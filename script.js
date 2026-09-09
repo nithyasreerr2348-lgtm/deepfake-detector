@@ -87,7 +87,7 @@ analyzeButton.addEventListener("click", async function () {
         // Send video to Flask backend
 
         const response = await fetch(
-            "http://127.0.0.1:5000/analyze",
+            "http://127.0.0.1:7860/analyze",
             {
                 method: "POST",
                 body: formData
