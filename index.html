@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DeepGuard - Deepfake Video Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            DeepGuard
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#detect">Detect</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    AI-POWERED VIDEO ANALYSIS
+                </p>
+
+                <h1>
+                    Detect Deepfakes<br>
+                    with <span>AI</span>
+                </h1>
+
+                <p class="description">
+                    Upload a video and analyze it for signs of
+                    manipulation using our deepfake detection system.
+                </p>
+
+                <a href="#detect" class="primary-button">
+                    Start Detection
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- DETECTION SECTION -->
+
+        <section class="detect-section" id="detect">
+
+            <h2>Deepfake Video Detection</h2>
+
+            <p class="section-description">
+                Upload a video file to analyze whether it is likely
+                authentic or manipulated.
+            </p>
+
+
+            <div class="upload-box">
+
+                <div class="upload-icon">
+                    ↑
+                </div>
+
+                <h3>
+                    Upload your video
+                </h3>
+
+                <p>
+                    MP4, MOV or AVI
+                </p>
+
+                <input
+                    type="file"
+                    id="videoInput"
+                    accept="video/*"
+                >
+
+                <label for="videoInput" class="upload-button">
+                    Choose Video
+                </label>
+
+                <p id="fileName">
+                    No video selected
+                </p>
+
+            </div>
+
+
+            <div id="videoContainer" class="video-container">
+
+                <video
+                    id="videoPreview"
+                    controls
+                ></video>
+
+            </div>
+
+
+            <button
+                id="analyzeButton"
+                class="analyze-button"
+            >
+                Analyze Video
+            </button>
+
+
+            <!-- RESULT -->
+
+            <div id="resultBox" class="result-box">
+
+                <h3>
+                    Detection Result
+                </h3>
+
+                <p id="resultText">
+                    Waiting for analysis...
+                </p>
+
+                <div class="confidence">
+                    Confidence:
+                    <span id="confidenceValue">--</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+
+        <section class="about-section" id="about">
+
+            <h2>
+                How DeepGuard Works
+            </h2>
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="number">
+                        01
+                    </div>
+
+                    <h3>
+                        Upload
+                    </h3>
+
+                    <p>
+                        Select a video from your device.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="number">
+                        02
+                    </div>
+
+                    <h3>
+                        Analyze
+                    </h3>
+
+                    <p>
+                        The system examines the uploaded video.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="number">
+                        03
+                    </div>
+
+                    <h3>
+                        Result
+                    </h3>
+
+                    <p>
+                        View the predicted result and confidence.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 DeepGuard | Deepfake Detection Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
